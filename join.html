@@ -50,42 +50,126 @@
       <input type="hidden" name="_captcha" value="false">
       <input type="text" name="_honey" style="display:none">
 
-      <!-- Personal Info -->
-      <div class="col-md-6">
-        <label class="form-label" for="fullName">Full Name</label>
-        <input class="form-control" type="text" id="fullName" name="Full Name" required>
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="email">Email Address</label>
-        <input class="form-control" type="email" id="email" name="Email" required>
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="phone">Phone Number</label>
-        <input class="form-control" type="tel" id="phone" name="Phone" required>
-      </div>
+     <div class="row g-4">
+        <div class="col-md-6">
+          <label for="joinSelect" class="form-label">Join As</label>
+          <select id="joinSelect" name="Join Us" class="form-select" required>
+            <option value="">— Select —</option>
+            <option>join Us</option>
+  
+          </select>
+        </div>
 
-      <!-- Qualification -->
-      <div class="col-md-6">
-        <label class="form-label" for="qualification">Highest Qualification</label>
-        <select class="form-select" id="qualification" name="Qualification" required>
-          <option value="">Select…</option>
-          <option>SSC</option>
-          <option>HSC</option>
-          <option>Bachelor’s Degree</option>
-          <option>Master’s Degree</option>
-          <option>Other</option>
-        </select>
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="field">Field of Study</label>
-        <input class="form-control" type="text" id="field" name="Field of Study">
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="experience">Years of Experience</label>
-        <input class="form-control" type="number" id="experience" name="Experience" min="0" max="50">
-      </div>
+        <div class="col-md-6">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input
+            type="text"
+            id="fullName"
+            name="Full Name"
+            class="form-control"
+            required
+          />
+        </div>
 
-      <!-- Position & Skills -->
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="Email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="Phone"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="photo" class="form-label">Upload Photo</label>
+          <input
+            type="file"
+            id="photo"
+            name="photo"
+            accept=".jpg,.png,.jpeg"
+            class="form-control"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="gender" class="form-label">Gender</label>
+          <select
+            id="gender"
+            name="Gender"
+            class="form-select"
+            required
+          >
+            <option value="">— Select —</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Others</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="dob" class="form-label">Date of Birth</label>
+          <input
+            type="date"
+            id="dob"
+            name="dob"
+            class="form-control"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="qualification" class="form-label">Highest Qualification</label>
+          <select
+            id="qualification"
+            name="Qualification"
+            class="form-select"
+            required
+          >
+            <option value="">— Select —</option>
+            <option>SSC</option>
+            <option>HSC</option>
+            <option>Bachelor’s Degree</option>
+            <option>Master’s Degree</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="col-md-6">
+          <label for="field" class="form-label">Field of Study</label>
+          <input
+            type="text"
+            id="field"
+            name="Field of Study"
+            class="form-control"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="experience" class="form-label">Years of Experience</label>
+          <input
+            type="number"
+            id="experience"
+            name="Experience"
+            min="0"
+            max="50"
+            step="1"
+            class="form-control"
+          />
+        </div>
+
+              <!-- Position & Skills -->
       <div class="col-md-6">
         <label class="form-label" for="position">Position Applied For</label>
         <select class="form-select" id="position" name="Position" required>
@@ -97,7 +181,28 @@
           <option>Finance Assistant</option>
         </select>
       </div>
-      <div class="col-12">
+
+        <div class="col-md-6">
+          <label for="bloodGroup" class="form-label">Blood Group</label>
+          <select
+            id="bloodGroup"
+            name="Blood Group"
+            class="form-select"
+            required
+          >
+            <option value="">— Select —</option>
+            <option>A+</option>
+            <option>A−</option>
+            <option>B+</option>
+            <option>B−</option>
+            <option>O+</option>
+            <option>O−</option>
+            <option>AB+</option>
+            <option>AB−</option>
+          </select>
+        </div>
+
+<div class="col-12">
         <label class="form-label">Relevant Skills</label><br>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="checkbox" id="skill1" name="Skills" value="e-waste management">
@@ -117,15 +222,26 @@
         </div>
       </div>
 
-      <!-- CV Upload -->
-      <div class="col-md-6">
-        <label class="form-label" for="cv">Upload Your CV</label>
-        <input class="form-control" type="file" id="cv" name="attachment" accept=".pdf,.doc,.docx">
-      </div>
-      <div class="col-md-6">
-        <label class="form-label" for="coverLetter">Cover Letter</label>
-        <textarea class="form-control" id="coverLetter" name="Cover Letter" rows="4"></textarea>
-      </div>
+        <div class="col-md-6">
+          <label for="cv" class="form-label">Upload Your CV</label>
+          <input
+            type="file"
+            id="cv"
+            name="cv"
+            accept=".pdf,.doc,.docx"
+            class="form-control"
+          />
+        </div>
+
+        <div class="col-md-6">
+          <label for="coverLetter" class="form-label">Cover Letter</label>
+          <textarea
+            id="coverLetter"
+            name="Cover Letter"
+            rows="4"
+            class="form-control"
+          ></textarea>
+        </div>
 
       <!-- Submit -->
       <div class="col-12 text-center">

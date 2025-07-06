@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TNGO | Our Team & Volunteers</title>
+  <style>
+    /* Reset & Base */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9fb;
+    }
+
+    /* Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #218838;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+    .logo img {
+      height: 40px;
+    }
+
+    /* Toggle Button (Hidden on Desktop) */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    /* Nav Links */
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .nav-links a:hover,
+    .nav-links .active {
+      color: #ffeaea;
+    }
+
+    /* Content Padding to Offset Fixed Navbar */
+    .content {
+      padding-top: 80px;
+      text-align: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    /* Team Grid & Members */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+    .member {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .member:hover {
+      transform: translateY(-5px);
+    }
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    .member h3 {
+      margin: 0.5rem 0 0.25rem;
+    }
+    .member p {
+      font-size: 0.9rem;
+      color: #444;
+      margin: 0.25rem 0;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 1rem;
+    }
+    .social-icons a img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: white;
+      padding: 6px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+    }
+    .social-icons a img:hover {
+      transform: scale(1.15);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #dc3545;
+      color: #fff;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Mobile Styles */
+    @media (max-width: 600px) {
+      .menu-toggle {
+        display: block;
+      }
+      .nav-links {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #dc3545;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        display: none;
+        padding: 1rem 0;
+      }
+      .nav-links.active {
+        display: flex;
+      }
+      .nav-links a {
+        font-size: 1rem;
+      }
+      .content h1, .content h2 {
+        font-size: 1.8rem;
+      }
+      .tagline {
+        font-size: 0.95rem;
+      }
+      .member img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">
+      <img src="logo.png" alt="TNGO Logo">
+    </a>
+    <button class="menu-toggle" aria-label="Toggle Menu">
+      &#9776;
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="team.html" class="active">Our Team</a></li>
+      <li><a href="join.html">Join Us</a></li>
+      <li><a href="register.html">Register</a></li>
+      <li><a href="survey.html">Survey</a></li>
+    </ul>
+  </nav>
+
+  <section class="content">
+    <h1>Meet Our Core Team</h1>
+
+    <p class="tagline">
+      Driven by compassion, powered by technology—this is the heart of Tblood.
+    </p>
+<p class="tagline">
+                                ..
+    </p>
+    <div class="team-grid">
+      <div class="member">
+        <img src="1000018150-01.jpeg" alt="TOHA">
+        <h3>ABRAR ISHRAQ TOHA</h3>
+        <p>Founder & Executive Director</p>
+        <p>Leads TNGOO mission to..................</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/16SYA8zvQz/?mibextid=ZbWKwL"><img src="12.webp" alt="Facebook"></a>
+          <a href="mailto:info@pmtoha.site" class="custom-button"><img src="uuyy.webp" alt="Email Icon">
+          <a href="https://pmtoha.site/"><img src="wrt.png" alt="web"></a>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="assets/member2.jpg" alt="Operations Lead">
+        <h3>Board Chair</h3>
+        <p>.......................</p>
+        <div class="social-icons">
+          <a href="#"><img src="12.webp" alt="Facebook"></a>
+          <a href="mailto:"><img src="uuyy.webp" alt="Email Icon"></a>
+        </div>
+      </div>
+
+      <div class="member">
+        <img src="assets/member3.jpg" alt="Community Outreach">
+        <h3>Program Manager</h3>
+        <p....................</p>
+        <div class="social-icons">
+          <a href="#"><img src="12.webp" alt="Facebook"></a>
+          <a href="mailto:"><img src="uuyy.webp" alt="Email Icon"></a>
+        </div>
+      </div>
+ </div>
+  </section>
+
+  <section class="content">
+    <h2>Our Volunteers</h2>
+
+    <p class="tagline">
+      These amazing souls dedicate their time and energy to support every blood donation effort.
+    </p>
+<p class="tagline">
+                                ..
+    </p>
+    <div class="team-grid">
+      <div class="member">
+        <img src="assets/volunteer1.jpg" alt="Field Volunteer">
+        <h3>Field Volunteer</h3>
+        <p>Supports transportation and live coordination during blood drives.</p>
+      </div>
+      <div class="member">
+        <img src="assets/volunteer2.jpg" alt="Campaign Volunteer">
+        <h3>Campaign Volunteer</h3>
+        <p>Engages communities and spreads awareness online.</p>
+      </div>
+      <div class="member">
+        <img src="assets/volunteer3.jpg" alt="Tech Support">
+        <h3>Tech Support</h3>
+        <p>Manages digital tools and optimizes donor registration.</p>
+      </div>
+    </div>
+  </section>
+  <section class="content">
+    <h2>Connect With Us</h2>
+
+    <p class="tagline">
+      We’d love to hear from you—whether you want to volunteer, donate, or spread the word.
+    </p>
+
+    <div class="social-icons">
+      <a href="https://www.facebCt/"><img src="12.webp" alt="Facebook"></a>
+      <a href="mailto:" title="Email"><img src="uuyy.webp" alt="Email"></a>
+      <a href="tel:+880" title="Call Us"><img src="rrrrrrr.png" alt="Phone"></a>
+    </div>
+  </section>
+ <footer>
+    <p>&copy; 2025 TNGO. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    toggleBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
